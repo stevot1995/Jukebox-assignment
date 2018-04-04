@@ -49,7 +49,19 @@ namespace WindowsFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Copy();
+     
+        }
+        private void Copy()
+        {
+            int c = listBox1.Items.Count - 1;
+            for (int t = c; t >=0; t--)
+            {
+                if (listBox1.GetSelected(t))
+                {
+                    listBox2.Items.Add(listBox1.Items[t]);
+                }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -58,8 +70,8 @@ namespace WindowsFormsApp3
         }
 
         private void ADD()
-        { int c = listBox1.Items.Count - 1;
-            for (int i = c; i >= 0; i--)
+        { int a = listBox1.Items.Count - 1;
+            for (int i = a; i >= 0; i--)
             {
                 if (listBox1.GetSelected(i))
                 {

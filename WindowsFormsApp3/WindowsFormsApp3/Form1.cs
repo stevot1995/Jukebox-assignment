@@ -11,21 +11,24 @@ using System.Windows.Forms;
 namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
+       
     {
         public Form1()
+            
         {
             InitializeComponent();
         }
-
+        
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("New command executed");
+            var Setup = new Form3();
+            Setup.Show();
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This was created by Thomas Stephenson for Assessment 2",
-         "About the Jukebox", MessageBoxButtons.OK);
+            var About = new Form2();
+            About.Show();
              }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

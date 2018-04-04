@@ -28,3 +28,5 @@ C:\Users\Downstairs pc\Downloads\Visual Studio 2017-20180404T103351Z-001\Visual 
 C:\Users\Downstairs pc\Downloads\Visual Studio 2017-20180404T103351Z-001\Visual Studio 2017\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 C:\Users\Downstairs pc\Downloads\Visual Studio 2017-20180404T103351Z-001\Visual Studio 2017\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\Downstairs pc\Downloads\Visual Studio 2017-20180404T103351Z-001\Visual Studio 2017\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\Downstairs pc\Downloads\Visual Studio 2017-20180404T103351Z-001\Visual Studio 2017\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\Downstairs pc\Downloads\Visual Studio 2017-20180404T103351Z-001\Visual Studio 2017\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources

@@ -55,16 +55,9 @@ namespace WindowsFormsApp3
             // Where it tried to get it to play  > axWindowsMediaPlayer2.URL = MP3[listBox2.SelectedIndex]; 
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-          
+        
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {

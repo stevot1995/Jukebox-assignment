@@ -74,8 +74,9 @@
             this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(9, 12);
             this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
             this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
-            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(271, 49);
+            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(215, 96);
             this.axWindowsMediaPlayer2.TabIndex = 1;
+            this.axWindowsMediaPlayer2.Visible = false;
             // 
             // listBox1
             // 
@@ -88,7 +89,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(705, 40);
+            this.button1.Location = new System.Drawing.Point(369, 690);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 106);
             this.button1.TabIndex = 4;

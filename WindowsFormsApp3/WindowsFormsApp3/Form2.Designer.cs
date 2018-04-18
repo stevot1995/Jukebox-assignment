@@ -38,9 +38,9 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(409, 830);
+            this.buttonOK.Location = new System.Drawing.Point(183, 828);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(231, 85);
+            this.buttonOK.Size = new System.Drawing.Size(609, 108);
             this.buttonOK.TabIndex = 0;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@
             this.pictureBox1.Image = global::WindowsFormsApp3.Properties.Resources.jukebox;
             this.pictureBox1.Location = new System.Drawing.Point(28, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(435, 720);
+            this.pictureBox1.Size = new System.Drawing.Size(508, 789);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -59,11 +59,11 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(551, 138);
+            this.textBox1.Location = new System.Drawing.Point(551, 96);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(433, 615);
+            this.textBox1.Size = new System.Drawing.Size(443, 726);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 

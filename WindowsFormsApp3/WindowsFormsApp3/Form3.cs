@@ -12,8 +12,10 @@ namespace WindowsFormsApp3
 {
     public partial class Form3 : Form
     {
+        
         public Form3()
         {
+           
             InitializeComponent();
         }
         string[] Folderbrowser, MP3;
@@ -29,7 +31,14 @@ namespace WindowsFormsApp3
                     listBox1.Items.Add(MP3[M]);
                 }
             }
+           
         }
+
+        public string ListofSongs
+        {
+            get { return listBox2.SelectedItem.ToString(); }
+        }
+
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
@@ -60,16 +69,17 @@ namespace WindowsFormsApp3
                 if (listBox1.GetSelected(t))
                 {
                     listBox2.Items.Add(listBox1.Items[t]);
+                    
                 }
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ADD();
+            Add();
         }
 
-        private void ADD()
+        private void Add()
         { int a = listBox1.Items.Count - 1;
             for (int i = a; i >= 0; i--)
             {
@@ -79,6 +89,11 @@ namespace WindowsFormsApp3
                     listBox1.Items.RemoveAt(i);
                 }
             }
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

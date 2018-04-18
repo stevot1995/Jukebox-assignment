@@ -32,8 +32,10 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
             this.SuspendLayout();
@@ -75,32 +77,50 @@
             this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(271, 49);
             this.axWindowsMediaPlayer2.TabIndex = 1;
             // 
-            // listBox4
+            // listBox1
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 24;
-            this.listBox4.Location = new System.Drawing.Point(321, 442);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(272, 220);
-            this.listBox4.TabIndex = 2;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 24;
+            this.listBox1.Location = new System.Drawing.Point(321, 442);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(272, 220);
+            this.listBox1.TabIndex = 2;
             // 
-            // listBox3
+            // button1
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.HorizontalScrollbar = true;
-            this.listBox3.ItemHeight = 24;
-            this.listBox3.Location = new System.Drawing.Point(321, 264);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(258, 52);
-            this.listBox3.TabIndex = 3;
+            this.button1.Location = new System.Drawing.Point(705, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 106);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Import Music";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Multiselect = true;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.HorizontalScrollbar = true;
+            this.listBox2.ItemHeight = 24;
+            this.listBox2.Location = new System.Drawing.Point(321, 264);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(258, 100);
+            this.listBox2.TabIndex = 3;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.listBox2.DoubleClick += new System.EventHandler(this.listBox2_DoubleClick);
             // 
             // Form1
             // 
             this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.jukebox;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(908, 855);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.axWindowsMediaPlayer2);
             this.Controls.Add(this.menuStrip2);
             this.DoubleBuffered = true;
@@ -116,16 +136,18 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+       
+        
+        
+        
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer2;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 

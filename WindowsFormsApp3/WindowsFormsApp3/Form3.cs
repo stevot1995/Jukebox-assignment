@@ -12,11 +12,13 @@ namespace WindowsFormsApp3
 {
     public partial class Form3 : Form
     {
+        public static ListBox form3listbox;
         
         public Form3()
         {
            
             InitializeComponent();
+            form3listbox = listBox2;
         }
         string[] Folderbrowser, MP3;
         private void button1_Click(object sender, EventArgs e)
@@ -52,7 +54,7 @@ namespace WindowsFormsApp3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
+            listBox1.Items.Clear();     // Clears items
 
         }
 
@@ -87,11 +89,17 @@ namespace WindowsFormsApp3
                 {
                     listBox2.Items.Add(listBox1.Items[i]);
                     listBox1.Items.RemoveAt(i);
+                    
                 }
             }
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

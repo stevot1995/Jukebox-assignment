@@ -14,15 +14,23 @@ namespace WindowsFormsApp3
 
     {
         
+        
         public Form1()
 
         {
            
             InitializeComponent();
         }
+        
+        private ListBox form3listbox;
+        string[] Folderbrowser, MP3;
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+            new Form3().Hide();
 
-      
-       
+            form3listbox = Form3.form3listbox; // Where it tried to connect the forms
+            
+        }
    
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -36,13 +44,47 @@ namespace WindowsFormsApp3
             About.Show();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox2_DoubleClick(object sender, EventArgs e)
         {
+            // Where it tried to get it to play with this > axWindowsMediaPlayer2.URL = MP3[listBox2.SelectedIndex];
+            
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Where it tried to get it to play  > axWindowsMediaPlayer2.URL = MP3[listBox2.SelectedIndex]; 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    Folderbrowser = openFileDialog1.FileNames;
+                    MP3 = openFileDialog1.SafeFileNames;
+                    for (int M = 0; M < MP3.Length; M++)
+                    {
+                        listBox2.Items.Add(MP3[M]);
+                    }
+
+                    foreach (string info in openFileDialog1.FileNames)
+                {
+                    listBox2.Items.Add(info);
+                }
+                }
+
+            
 
         }
-        private void Form3_Load(object sender, EventArgs e)
-        {
-           
+        
+        
+        
+            
         }
+
+        
+        
+            
+            
+        
     }
-}
+
